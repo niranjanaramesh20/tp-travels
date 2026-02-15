@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tp travels</title>
+</head>
+<body >
+
+<!--NAVBAR-->   
+<header>
+    <div class="logo">TP travels</div>
+    <nav>
+        <a href="#">Stays</a>
+        <a href="#">Experience</a>
+        <a href="#">Packages</a>
+    </nav>
+</header>    
+
+<!--HERO-->
+<section class="hero">
+    <div class="hero-content">
+        <h1><i>Find your next trip</i></h1>
+
+        <div class="search-box">
+            <form >
+                <input type="text" placeholder="Where are you going?"/>
+                <input type="text" placeholder="Add dates"/>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--RECENT_PLACES-->
+<section class="recent">
+  <div class="recent-left">
+    <h2> RECENTLY <br> BOOOKED <br> ITINERARIES </H2>
+    <div class="badge">
+   143+ trips booked last week 
+    </div>
+  </div>
+  <div class="recent-right">
+
+    <div class="recent-right">
+    <div class="recent-card">
+      <img src="https://media.istockphoto.com/id/466842820/photo/petronas-towers.jpg?s=612x612&w=0&k=20&c=X_Kl-W_ulJEzjvaaT8gRNTQWHboyLKaedXol5EPhGdI=" alt="">
+      <div class="recent-body">
+        <h4> Couple Holiday: 6 Nights In Kuala Lumpur And Langkawi  </h4>
+        <p> Kuala lumpur (3N) +1 more</p>
+        <span class="tag">
+          COUPLE</span>
+           <div class="recent-line"></div>
+        <div class="recent-footer">
+          <div>
+            <strong>$450</strong>
+            <p>5 nights / person</p>
+          </div>
+          <button>View Details </button>
+        </div>
+        </div>
+    </div>
+
+    <div class="recent-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoG2o5BVfIUYVVUFNRIAGzOTZy9yAno_2AEA&s" alt="">
+      <div class="recent-body">
+        <h4> Family Holiday: 5 Nights in Hanoi </h4>
+        <p> Hanoi (3N) + 1 more </p>
+        <span class="tag">
+          FAMILY</span>
+           <div class="recent-line"></div>
+        <div class="recent-footer">
+          <div>
+            <strong>$450</strong>
+            <p>5 nights / person</p>
+          </div>
+          <button>View Details </button>
+        </div>
+        </div>
+    </div>
+
+    <div class="recent-right">
+    <div class="recent-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVEvs9vLvlYwzaR6SaCiFqR1srO2hklYMGNw&s" alt="">
+      <div class="recent-body">
+        <h4> Solo Retreat: 9 Nights In Amsterdam, Rovaniemi And Prague </h4>
+        <p>  Amsterdam (3N) + 2 more </p>
+        <span class="tag">SOLO</span>
+          <div class="recent-line"></div>
+        <div class="recent-footer">
+          <div>
+            <strong>$450</strong>
+            <p>5 nights / person</p>
+          </div>
+          <button>View Details </button>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!--cards-->
+<section class="section">
+
+
+<h4>Popular tourist destination in Kerala > </h4>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://www.munnar.holiday/munnartourism/wp-content/uploads/2024/11/what-is-munnar-famous-for-1200x385.jpg" alt="">
+            <div class="card-content">
+                <h3>Munnar</h3>
+                <p>Nature and Peace</p>
+            </div>
+        </div> 
+
+    <div class="card">
+        <img src="https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Fmobile%2Fkovalam-lighthouse-beach-1724140585_b1ab8acb70ef4b4ecfab.webp&w=3840&q=75" alt="">
+        <div class="card-content">
+          <h3>Kovalam</h3>
+          <p>Beach </p>
+        </div>
+      </div>
+
+    <div class="card">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <div class="card-content">
+          <h3>Bekal Fort</h3>
+          <p>Monument</p>
+        </div>
+      </div>
+      
+     <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPkoG1PFGUjSo-VsJwiBAypGs6It7riu55dw&s" alt="">
+        <div class="card-content">
+          <h3>Alappuzha</h3>
+          <p>Backwaters</p>
+        </div>
+      </div>
+    </div>    
+
+
+    <h4>Places in Karnataka > </h4>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ApCSYAg54TNvObgN8unPGAdqZmtYl0hptA&s" alt="">
+            <div class="card-content">
+                <h3>Mysore Palace</h3>
+                <p>Heritage</p>
+            </div>
+        </div> 
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHdWucCysBIFTLhQDsLU8Qy_dfmbYmfH3OgQ&s" alt="">
+        <div class="card-content">
+          <h3>Coorg</h3>
+          <p>Nature and Peace</p>
+        </div>
+      </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgU0ChkpvYvGum0oTIvWm5vQshwQkepIHV6A&s" alt="">
+        <div class="card-content">
+          <h3>Hampi</h3>
+          <p>Historic Place</p>
+        </div>
+      </div>
+      
+     <div class="card">
+        <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2025/07/11111744/nandi.jpg" alt="">
+        <div class="card-content">
+          <h3>Nandi Hills</h3>
+          <p>Hills</p>
+        </div>
+      </div>
+    </div>
+
+    <h4>Places in Tamil Nadu > </h4>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyqvDT7Kw6vQnj_JgJC7hQl4ITtnd1koloVw&s"> 
+            <div class="card-content">
+                <h3>Mahabalipuram</h3>
+                <p>Historic Place</p>
+            </div>
+        </div> 
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VmJdxre_T3HFa3Om2SgDIdYmuExh71dv5A&s" alt="">
+        <div class="card-content">
+          <h3>Kodaikanal</h3>
+          <p>Hills</p>
+        </div>
+      </div>
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThoEBjNsLfbEGCnyUSXq7eqKVCW7Yzp5cUlQ&s" alt="">
+        <div class="card-content">
+          <h3>Tanjavur</h3>
+          <p>Temples</p>
+        </div>
+      </div>
+      
+     <div class="card">
+        <img src="https://hblimg.mmtcdn.com/content/hubble/img/destimg/mmt/destination/m_Ooty_main_tv_destination_img_1_l_764_1269.jpg" alt="">
+        <div class="card-content">
+          <h3>Ooty</h3>
+          <p>Nature and Peace</p>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+<section>
+
+</section>
+
+<!--FOOTER-->
+<footer>
+<div class="footer">
+<div class="footer-top">
+  <div class="footer-col">
+      <h4>Package Category</h4>
+        <a href="#">International</a>
+        <a href="#">Domestic</a>
+        <a href="#">Honeymoon</a>
+        <a href="#">Cruises</a>
+    </div>
+
+    <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">Help Centre</a>
+        <a href="#">Cancellation options</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+
+     <div class="footer-col">
+      <h4>TP travels</h4>
+        <a href="#">2025 Summer Release</a>
+        <a href="#">Newsroom</a>
+        <a href="#">Careers</a>
+        <a href="#">Investors</a>
+    </div>
+</div>
+</div>
+
+<div class="footer-bottom">
+    <p>© 2026 TP travels, Inc. · Privacy · Terms · Company details</p>
+
+    <div class="footer-right">
+      <span>🌐 English (IN)</span>
+      <span>₹ INR</span>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>
